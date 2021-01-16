@@ -17,7 +17,20 @@
   <entry>
     <title>Hexo使用方法</title>
     <url>/2021/01/16/Hexo%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">title: </span><br><span class="line">date: </span><br><span class="line">urlname:                  <span class="comment">#自定义文章URL</span></span><br><span class="line">categories:           </span><br><span class="line">tags: </span><br><span class="line">    - 标签</span><br><span class="line"></span><br><span class="line">thumbnail:                <span class="comment">#文章预览图</span></span><br><span class="line">comments: <span class="literal">true</span>            <span class="comment">#评论系统</span></span><br><span class="line">toc: <span class="literal">true</span>                 <span class="comment">#目录</span></span><br><span class="line">mathjax: <span class="literal">true</span>             <span class="comment">#公式渲染</span></span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>实验记录</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>别看了</title>
+    <url>/2021/01/16/%E5%95%8A%E8%BF%99/</url>
+    <content><![CDATA[<p>傻逼</p>
+]]></content>
       <categories>
         <category>Hexo</category>
       </categories>
