@@ -15,36 +15,15 @@
 ]]></content>
   </entry>
   <entry>
-    <title>第一篇文章</title>
-    <url>/2021/01/15/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</url>
-    <content><![CDATA[<h1 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h1><h2 id="好耶"><a href="#好耶" class="headerlink" title="好耶"></a>好耶</h2><blockquote>
-<p>你好</p>
-</blockquote>
-]]></content>
-  </entry>
-  <entry>
-    <title>about</title>
-    <url>/2021/01/15/about/</url>
+    <title>Hexo使用方法</title>
+    <url>/2021/01/16/Hexo%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</url>
     <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>第二篇文章</title>
-    <url>/2021/01/15/%E7%AC%AC%E4%BA%8C%E7%AF%87%E6%96%87%E7%AB%A0/</url>
-    <content><![CDATA[<h1 id="标题1"><a href="#标题1" class="headerlink" title="标题1"></a>标题1</h1><h2 id="标题2"><a href="#标题2" class="headerlink" title="标题2"></a>标题2</h2><h3 id="标题3"><a href="#标题3" class="headerlink" title="标题3"></a>标题3</h3><h4 id="标题4"><a href="#标题4" class="headerlink" title="标题4"></a>标题4</h4><ul>
-<li>列表1<br>  子1<br>  子2<br>  子3<pre><code>  子31
-  子32
-      子321
-  子33</code></pre>
-</li>
-<li>列表2<br><a href="https://space.bilibili.com/35806582">链接</a><br><img src="" alt="图片"></li>
-</ul>
-]]></content>
       <categories>
-        <category>分类1</category>
+        <category>Hexo</category>
       </categories>
       <tags>
-        <tag>导航</tag>
-        <tag>分享</tag>
+        <tag>Hexo</tag>
+        <tag>实验记录</tag>
       </tags>
   </entry>
 </search>
