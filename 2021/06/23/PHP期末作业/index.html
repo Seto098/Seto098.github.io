@@ -1,253 +1,5 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.3.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
-
-<link rel="stylesheet" href="/css/main.css">
-
-
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
-
-<script id="hexo-configurations">
-    var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"tanglk-seto.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":20,"offset":15,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
-  </script>
-
-  <meta name="description" content="登陆注册 学生教师端 增删查改">
-<meta property="og:type" content="article">
-<meta property="og:title" content="PHP期末作业">
-<meta property="og:url" content="https://tanglk-seto.github.io/2021/06/23/PHP%E6%9C%9F%E6%9C%AB%E4%BD%9C%E4%B8%9A/index.html">
-<meta property="og:site_name" content="Seto又在摸鱼了">
-<meta property="og:description" content="登陆注册 学生教师端 增删查改">
-<meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-06-23T03:24:03.000Z">
-<meta property="article:modified_time" content="2021-06-26T15:28:58.587Z">
-<meta property="article:author" content="Seto">
-<meta property="article:tag" content="PHP">
-<meta property="article:tag" content="学习">
-<meta name="twitter:card" content="summary">
-
-<link rel="canonical" href="https://tanglk-seto.github.io/2021/06/23/PHP%E6%9C%9F%E6%9C%AB%E4%BD%9C%E4%B8%9A/">
-
-
-<script id="page-configurations">
-  // https://hexo.io/docs/variables.html
-  CONFIG.page = {
-    sidebar: "",
-    isHome : false,
-    isPost : true,
-    lang   : 'zh-CN'
-  };
-</script>
-
-  <title>PHP期末作业 | Seto又在摸鱼了</title>
-  
-
-
-
-
-
-
-  <noscript>
-  <style>
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-header { opacity: initial; }
-
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
-  }
-
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
-  </style>
-</noscript>
-
-</head>
-
-<body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
-    <div class="headband"></div>
-
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-container">
-  <div class="site-nav-toggle">
-    <div class="toggle" aria-label="切换导航栏">
-      <span class="toggle-line toggle-line-first"></span>
-      <span class="toggle-line toggle-line-middle"></span>
-      <span class="toggle-line toggle-line-last"></span>
-    </div>
-  </div>
-
-  <div class="site-meta">
-
-    <a href="/" class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">Seto又在摸鱼了</h1>
-      <span class="logo-line-after"><i></i></span>
-    </a>
-  </div>
-
-  <div class="site-nav-right">
-    <div class="toggle popup-trigger">
-        <i class="fa fa-search fa-fw fa-lg"></i>
-    </div>
-  </div>
-</div>
-
-
-
-
-<nav class="site-nav">
-  <ul id="menu" class="main-menu menu">
-        <li class="menu-item menu-item-home">
-
-    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
-
-  </li>
-        <li class="menu-item menu-item-tags">
-
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">2</span></a>
-
-  </li>
-        <li class="menu-item menu-item-categories">
-
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">2</span></a>
-
-  </li>
-        <li class="menu-item menu-item-archives">
-
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">1</span></a>
-
-  </li>
-      <li class="menu-item menu-item-search">
-        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
-        </a>
-      </li>
-  </ul>
-</nav>
-
-
-
-  <div class="search-pop-overlay">
-    <div class="popup search-popup">
-        <div class="search-header">
-  <span class="search-icon">
-    <i class="fa fa-search"></i>
-  </span>
-  <div class="search-input-container">
-    <input autocomplete="off" autocapitalize="off"
-           placeholder="搜索..." spellcheck="false"
-           type="search" class="search-input">
-  </div>
-  <span class="popup-btn-close">
-    <i class="fa fa-times-circle"></i>
-  </span>
-</div>
-<div id="search-result">
-  <div id="no-result">
-    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
-  </div>
-</div>
-
-    </div>
-  </div>
-
-</div>
-    </header>
-
-    
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
-
-
-    <main class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          
-
-          <div class="content post posts-expand">
-            
-
-    
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://tanglk-seto.github.io/2021/06/23/PHP%E6%9C%9F%E6%9C%AB%E4%BD%9C%E4%B8%9A/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Seto">
-      <meta itemprop="description" content="起床学习">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Seto又在摸鱼了">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          PHP期末作业
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-06-23 11:24:03" itemprop="dateCreated datePublished" datetime="2021-06-23T11:24:03+08:00">2021-06-23</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-06-26 23:28:58" itemprop="dateModified" datetime="2021-06-26T23:28:58+08:00">2021-06-26</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/PHP/" itemprop="url" rel="index"><span itemprop="name">PHP</span></a>
-                </span>
-                  ，
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/PHP/%E6%9C%9F%E6%9C%AB%E4%BD%9C%E4%B8%9A/" itemprop="url" rel="index"><span itemprop="name">期末作业</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-        <ul>
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>PHP期末作业 - Seto又在摸鱼了!!</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Seto又在摸鱼了!!"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Seto又在摸鱼了!!"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="登陆注册 学生教师端 增删查改"><meta property="og:type" content="blog"><meta property="og:title" content="PHP期末作业"><meta property="og:url" content="https://tanglk-seto.github.io/2021/06/23/PHP%E6%9C%9F%E6%9C%AB%E4%BD%9C%E4%B8%9A/"><meta property="og:site_name" content="Seto又在摸鱼了!!"><meta property="og:description" content="登陆注册 学生教师端 增删查改"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://tanglk-seto.github.io/img/og_image.png"><meta property="article:published_time" content="2021-06-23T03:24:03.000Z"><meta property="article:modified_time" content="2021-06-26T15:33:07.774Z"><meta property="article:author" content="Seto"><meta property="article:tag" content="PHP"><meta property="article:tag" content="学习"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://tanglk-seto.github.io/2021/06/23/PHP%E6%9C%9F%E6%9C%AB%E4%BD%9C%E4%B8%9A/"},"headline":"Seto又在摸鱼了!!","image":["https://tanglk-seto.github.io/img/og_image.png"],"datePublished":"2021-06-23T03:24:03.000Z","dateModified":"2021-06-26T15:33:07.774Z","author":{"@type":"Person","name":"Seto"},"description":"登陆注册 学生教师端 增删查改"}</script><link rel="canonical" href="https://tanglk-seto.github.io/2021/06/23/PHP%E6%9C%9F%E6%9C%AB%E4%BD%9C%E4%B8%9A/"><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/font-awesome/5.12.0/css/all.min.css"><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css"><link rel="stylesheet" href="https://fonts.loli.net/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/cookieconsent/3.1.1/cookieconsent.min.css"><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/justifiedGallery/3.7.0/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdnjs.loli.net/ajax/libs/pace/1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.3.0"></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo2.svg" alt="Seto又在摸鱼了!!" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">首页</a><a class="navbar-item" href="/archives">文章</a><a class="navbar-item" href="/categories">分类</a><a class="navbar-item" href="/tags">标签</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="My GitHub" href="https://github.com/Tanglk-Seto"><i class="fab fa-github"></i></a><a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2021-06-23T03:24:03.000Z" title="2021/6/23 上午11:24:03">2021-06-23</time>发表</span><span class="level-item"><time dateTime="2021-06-26T15:33:07.774Z" title="2021/6/26 下午11:33:07">2021-06-26</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/PHP/">PHP</a><span> / </span><a class="link-muted" href="/categories/PHP/%E6%9C%9F%E6%9C%AB%E4%BD%9C%E4%B8%9A/">期末作业</a></span><span class="level-item">7 分钟读完 (大约1064个字)</span></div></div><h1 class="title is-3 is-size-4-mobile">PHP期末作业</h1><div class="content"><ul>
 <li>登陆注册</li>
 <li>学生教师端</li>
 <li>增删查改</li>
@@ -295,205 +47,48 @@
 <h4 id="模糊搜索"><a href="#模糊搜索" class="headerlink" title="模糊搜索"></a>模糊搜索</h4><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$selCourse</span>=<span class="string">&quot;select*from course where <span class="subst">$Condition</span> like &#x27;%<span class="subst">$Search</span>%&#x27;&quot;</span>;</span><br></pre></td></tr></table></figure>
 <h4 id="执行语句-4"><a href="#执行语句-4" class="headerlink" title="执行语句"></a>执行语句</h4><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$resSel</span>=mysqli_query(<span class="variable">$getCon</span>,<span class="variable">$selCourse</span>);</span><br></pre></td></tr></table></figure>
 <h4 id="遍历输出"><a href="#遍历输出" class="headerlink" title="遍历输出"></a>遍历输出</h4><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span>(<span class="variable">$row</span>=mysqli_fetch_array(<span class="variable">$resSel</span>))&#123;</span><br><span class="line">	<span class="keyword">echo</span><span class="string">&quot;</span></span><br><span class="line"><span class="string">		&lt;tr class=\&quot;showCouCen\&quot;&gt;</span></span><br><span class="line"><span class="string">			&lt;td&gt;<span class="subst">&#123;$row[&#x27;CouNo&#x27;]&#125;</span>&lt;/td&gt;</span></span><br><span class="line"><span class="string">			&lt;td&gt;<span class="subst">&#123;$row[&#x27;CouName&#x27;]&#125;</span>&lt;/td&gt;</span></span><br><span class="line"><span class="string">			&lt;td&gt;<span class="subst">&#123;$row[&#x27;Kind&#x27;]&#125;</span>&lt;/td&gt;</span></span><br><span class="line"><span class="string">			&lt;td&gt;<span class="subst">&#123;$row[&#x27;Credit&#x27;]&#125;</span>&lt;/td&gt;</span></span><br><span class="line"><span class="string">			&lt;td&gt;<span class="subst">&#123;$row[&#x27;Teacher&#x27;]&#125;</span>&lt;/td&gt;</span></span><br><span class="line"><span class="string">			&lt;td&gt;<span class="subst">&#123;$row[&#x27;DepartNo&#x27;]&#125;</span>&lt;/td&gt;</span></span><br><span class="line"><span class="string">			&lt;td&gt;<span class="subst">&#123;$row[&#x27;SchoolTime&#x27;]&#125;</span>&lt;/td&gt;</span></span><br><span class="line"><span class="string">			&lt;td&gt;<span class="subst">&#123;$row[&#x27;LimitNum&#x27;]&#125;</span>&lt;/td&gt;</span></span><br><span class="line"><span class="string">			&lt;td&gt;<span class="subst">&#123;$row[&#x27;WillNum&#x27;]&#125;</span>&lt;/td&gt;</span></span><br><span class="line"><span class="string">			&lt;td&gt;<span class="subst">&#123;$row[&#x27;ChooseNum&#x27;]&#125;</span>&lt;/td&gt;</span></span><br><span class="line"><span class="string">		&lt;/tr&gt;</span></span><br><span class="line"><span class="string">	&quot;</span>;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
-
-    </div>
-
-    
-    
-    
-
-      <footer class="post-footer">
-          <div class="post-tags">
-              <a href="/tags/PHP/" rel="tag"> PHP</a>
-              <a href="/tags/%E5%AD%A6%E4%B9%A0/" rel="tag"> 学习</a>
-          </div>
-
-        
-
-
-        
-      </footer>
-    
-  </article>
-  
-  
-  
-
-
-
-          </div>
-          
-
-<script>
-  window.addEventListener('tabs:register', () => {
-    let { activeClass } = CONFIG.comments;
-    if (CONFIG.comments.storage) {
-      activeClass = localStorage.getItem('comments_active') || activeClass;
-    }
-    if (activeClass) {
-      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-      if (activeTab) {
-        activeTab.click();
-      }
-    }
-  });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      let commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
-    });
-  }
-</script>
-
-        </div>
-          
-  
-  <div class="toggle sidebar-toggle">
-    <span class="toggle-line toggle-line-first"></span>
-    <span class="toggle-line toggle-line-middle"></span>
-    <span class="toggle-line toggle-line-last"></span>
-  </div>
-
-  <aside class="sidebar">
-    <div class="sidebar-inner">
-
-      <ul class="sidebar-nav motion-element">
-        <li class="sidebar-nav-toc">
-          文章目录
-        </li>
-        <li class="sidebar-nav-overview">
-          站点概览
-        </li>
-      </ul>
-
-      <!--noindex-->
-      <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BC%95%E5%85%A5header%E5%92%8CFooter"><span class="nav-number">1.</span> <span class="nav-text">引入header和Footer</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%B3%A8%E5%86%8C%E7%99%BB%E5%BD%95%E7%B3%BB%E7%BB%9F"><span class="nav-number"></span> <span class="nav-text">注册登录系统</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="nav-number">1.</span> <span class="nav-text">数据库</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E6%B3%A8%E5%86%8C%E8%A1%A8"><span class="nav-number">1.1.</span> <span class="nav-text">创建注册表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5"><span class="nav-number">1.2.</span> <span class="nav-text">数据库连接</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BF%9E%E6%8E%A5%E5%BA%93"><span class="nav-number">1.2.1.</span> <span class="nav-text">连接库</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%B5%8B%E8%AF%95%E8%BF%9E%E6%8E%A5"><span class="nav-number">1.2.2.</span> <span class="nav-text">测试连接</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%A7%A3%E5%86%B3%E4%B9%B1%E7%A0%81"><span class="nav-number">1.2.3.</span> <span class="nav-text">解决乱码</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%99%BB%E5%BD%95"><span class="nav-number">2.</span> <span class="nav-text">登录</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%8E%B7%E5%8F%96%E8%A1%A8%E5%8D%95%E6%95%B0%E6%8D%AE"><span class="nav-number">2.1.</span> <span class="nav-text">获取表单数据</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%8E%E6%95%B0%E6%8D%AE%E5%BA%93%E8%8E%B7%E5%8F%96%E6%95%B0%E6%8D%AE"><span class="nav-number">2.2.</span> <span class="nav-text">从数据库获取数据</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E6%9F%A5%E8%AF%A2%E8%AF%AD%E5%8F%A5"><span class="nav-number">2.2.1.</span> <span class="nav-text">数据查询语句</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%A4%E6%96%AD%E8%B4%A6%E5%8F%B7%E5%AF%86%E7%A0%81"><span class="nav-number">2.2.2.</span> <span class="nav-text">判断账号密码</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B3%A8%E5%86%8C"><span class="nav-number">3.</span> <span class="nav-text">注册</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%8E%B7%E5%8F%96%E8%A1%A8%E5%8D%95%E6%95%B0%E6%8D%AE-1"><span class="nav-number">3.1.</span> <span class="nav-text">获取表单数据</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%8A%E4%BC%A0%E6%95%B0%E6%8D%AE%E5%88%B0%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="nav-number">3.2.</span> <span class="nav-text">上传数据到数据库</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E6%B7%BB%E5%8A%A0%E8%AF%AD%E5%8F%A5"><span class="nav-number">3.2.1.</span> <span class="nav-text">数据添加语句</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%A4%E6%96%AD%E7%94%A8%E6%88%B7%E5%90%8D%E5%8D%A0%E7%94%A8"><span class="nav-number">3.2.2.</span> <span class="nav-text">判断用户名占用</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%89%A7%E8%A1%8C%E4%B8%8A%E4%BC%A0%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="nav-number">3.2.3.</span> <span class="nav-text">执行上传数据库</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%80%89%E8%AF%BE%E7%B3%BB%E7%BB%9F"><span class="nav-number"></span> <span class="nav-text">选课系统</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93-1"><span class="nav-number">1.</span> <span class="nav-text">数据库</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AF%BC%E5%85%A5%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="nav-number">1.1.</span> <span class="nav-text">导入数据库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%9E%E6%8E%A5%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="nav-number">1.2.</span> <span class="nav-text">连接数据库</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%B5%8B%E8%AF%95%E8%BF%9E%E6%8E%A5-1"><span class="nav-number">1.2.1.</span> <span class="nav-text">测试连接</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%A7%A3%E5%86%B3%E4%B9%B1%E7%A0%81-1"><span class="nav-number">1.2.2.</span> <span class="nav-text">解决乱码</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AD%A6%E7%94%9F%E7%AB%AF"><span class="nav-number">2.</span> <span class="nav-text">学生端</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AF%BE%E7%A8%8B%E9%A2%84%E8%A7%88"><span class="nav-number">2.1.</span> <span class="nav-text">课程预览</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AD%A6%E7%94%9F%E4%BF%A1%E6%81%AF"><span class="nav-number">2.2.</span> <span class="nav-text">学生信息</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AD%A6%E7%94%9F%E9%80%89%E8%AF%BE"><span class="nav-number">2.3.</span> <span class="nav-text">学生选课</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%89%80%E6%9C%89%E8%AF%BE%E7%A8%8B%E8%BE%93%E5%87%BA"><span class="nav-number">2.3.1.</span> <span class="nav-text">所有课程输出</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9F%A5%E7%9C%8B%E5%B7%B2%E9%80%89%E8%AF%BE%E7%A8%8B"><span class="nav-number">2.3.2.</span> <span class="nav-text">查看已选课程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9F%A5%E7%9C%8B%E6%9C%AA%E9%80%89%E8%AF%BE%E7%A8%8B"><span class="nav-number">2.3.3.</span> <span class="nav-text">查看未选课程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%89%A7%E8%A1%8C"><span class="nav-number">2.3.4.</span> <span class="nav-text">执行</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%BE%AA%E7%8E%AF%E6%89%A7%E8%A1%8C"><span class="nav-number">2.3.5.</span> <span class="nav-text">循环执行</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E8%BE%93%E5%87%BA%E5%B7%B2%E9%80%89%E9%83%A8%E5%88%86"><span class="nav-number">2.3.5.1.</span> <span class="nav-text">输出已选部分</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E8%BE%93%E5%87%BA%E6%9C%AA%E9%80%89%E9%83%A8%E5%88%86"><span class="nav-number">2.3.5.2.</span> <span class="nav-text">输出未选部分</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E9%80%89%E8%AF%BE%E6%9D%A1%E4%BB%B6"><span class="nav-number">2.3.5.3.</span> <span class="nav-text">选课条件</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9%E9%80%89%E8%AF%BE"><span class="nav-number">2.3.6.</span> <span class="nav-text">修改选课</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%88%A0%E9%99%A4%E5%AD%A6%E7%94%9F%E9%80%89%E8%AF%BE"><span class="nav-number">2.3.6.1.</span> <span class="nav-text">删除学生选课</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#%E5%88%A0%E9%99%A4%E9%80%89%E8%AF%BE"><span class="nav-number">2.3.6.1.1.</span> <span class="nav-text">删除选课</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#%E6%89%A7%E8%A1%8C-1"><span class="nav-number">2.3.6.1.2.</span> <span class="nav-text">执行</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%9B%B4%E6%96%B0%E9%80%89%E8%AF%BE"><span class="nav-number">2.3.6.2.</span> <span class="nav-text">更新选课</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#%E8%8E%B7%E5%8F%96%E5%B7%B2%E9%80%89%E8%AF%BE%E6%95%B0"><span class="nav-number">2.3.6.2.1.</span> <span class="nav-text">获取已选课数</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#%E6%9B%B4%E6%96%B0%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="nav-number">2.3.6.2.2.</span> <span class="nav-text">更新数据库</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%99%E5%B8%88%E7%AB%AF"><span class="nav-number">3.</span> <span class="nav-text">教师端</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B5%8F%E8%A7%88%E8%AF%BE%E7%A8%8B"><span class="nav-number">3.1.</span> <span class="nav-text">浏览课程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9F%A5%E8%AF%A2%E8%AF%AD%E5%8F%A5"><span class="nav-number">3.1.1.</span> <span class="nav-text">查询语句</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%89%A7%E8%A1%8C%E8%AF%AD%E5%8F%A5"><span class="nav-number">3.1.2.</span> <span class="nav-text">执行语句</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%BE%AA%E7%8E%AF%E6%89%A7%E8%A1%8C-1"><span class="nav-number">3.1.3.</span> <span class="nav-text">循环执行</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A2%9E%E5%8A%A0%E8%AF%BE%E7%A8%8B"><span class="nav-number">3.2.</span> <span class="nav-text">增加课程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%8E%B7%E5%8F%96%E6%8F%92%E5%85%A5%E6%95%B0%E6%8D%AE"><span class="nav-number">3.2.1.</span> <span class="nav-text">获取插入数据</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%8F%92%E5%85%A5%E8%AF%AD%E5%8F%A5"><span class="nav-number">3.2.2.</span> <span class="nav-text">插入语句</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%89%A7%E8%A1%8C%E8%AF%AD%E5%8F%A5-1"><span class="nav-number">3.2.3.</span> <span class="nav-text">执行语句</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9%E8%AF%BE%E7%A8%8B"><span class="nav-number">3.3.</span> <span class="nav-text">修改课程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2"><span class="nav-number">3.3.1.</span> <span class="nav-text">条件查询</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%8E%B7%E5%8F%96%E6%95%B0%E6%8D%AE"><span class="nav-number">3.3.2.</span> <span class="nav-text">获取数据</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9B%B4%E6%96%B0%E8%AF%AD%E5%8F%A5"><span class="nav-number">3.3.3.</span> <span class="nav-text">更新语句</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%89%A7%E8%A1%8C%E8%AF%AD%E5%8F%A5-2"><span class="nav-number">3.3.4.</span> <span class="nav-text">执行语句</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%A0%E9%99%A4%E8%AF%BE%E7%A8%8B"><span class="nav-number">3.4.</span> <span class="nav-text">删除课程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%A0%E9%99%A4%E8%AF%AD%E5%8F%A5"><span class="nav-number">3.4.1.</span> <span class="nav-text">删除语句</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%89%A7%E8%A1%8C%E8%AF%AD%E5%8F%A5-3"><span class="nav-number">3.4.2.</span> <span class="nav-text">执行语句</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%90%9C%E7%B4%A2%E8%AF%BE%E7%A8%8B"><span class="nav-number">3.5.</span> <span class="nav-text">搜索课程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%8E%B7%E5%8F%96%E6%9D%A1%E4%BB%B6"><span class="nav-number">3.5.1.</span> <span class="nav-text">获取条件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%A8%A1%E7%B3%8A%E6%90%9C%E7%B4%A2"><span class="nav-number">3.5.2.</span> <span class="nav-text">模糊搜索</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%89%A7%E8%A1%8C%E8%AF%AD%E5%8F%A5-4"><span class="nav-number">3.5.3.</span> <span class="nav-text">执行语句</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%81%8D%E5%8E%86%E8%BE%93%E5%87%BA"><span class="nav-number">3.5.4.</span> <span class="nav-text">遍历输出</span></a></li></ol></li></ol></li></ol></div>
-      </div>
-      <!--/noindex-->
-
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="Seto"
-      src="/images/avatar.jpg">
-  <p class="site-author-name" itemprop="name">Seto</p>
-  <div class="site-description" itemprop="description">起床学习</div>
-</div>
-<div class="site-state-wrap motion-element">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-          <a href="/archives/">
-        
-          <span class="site-state-item-count">1</span>
-          <span class="site-state-item-name">日志</span>
-        </a>
-      </div>
-      <div class="site-state-item site-state-categories">
-            <a href="/categories/">
-          
-        <span class="site-state-item-count">2</span>
-        <span class="site-state-item-name">分类</span></a>
-      </div>
-      <div class="site-state-item site-state-tags">
-            <a href="/tags/">
-          
-        <span class="site-state-item-count">2</span>
-        <span class="site-state-item-name">标签</span></a>
-      </div>
-  </nav>
-</div>
-  <div class="links-of-author motion-element">
-      <span class="links-of-author-item">
-        <a href="https://github.com/Tanglk-Sensn" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;Tanglk-Sensn" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
-      </span>
-      <span class="links-of-author-item">
-        <a href="https://space.bilibili.com/35806582" title="Bilibili → https:&#x2F;&#x2F;space.bilibili.com&#x2F;35806582" rel="noopener" target="_blank"><i class="fab fa-youtube fa-fw"></i>Bilibili</a>
-      </span>
-  </div>
-
-
-
-      </div>
-
-    </div>
-  </aside>
-  <div id="sidebar-dimmer"></div>
-
-
-      </div>
-    </main>
-
-    <footer class="footer">
-      <div class="footer-inner">
-        
-
-        
-
-<div class="copyright">
-  
-  &copy; 
-  <span itemprop="copyrightYear">2021</span>
-  <span class="with-love">
-    <i class="fa fa-battery-quarter"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">快充满电的Sensn</span>
-</div>
-
-        
-
-
-
-
-
-
-
-
-      </div>
-    </footer>
-  </div>
-
-  
-  <script src="/lib/anime.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
-
-<script src="/js/utils.js"></script>
-
-<script src="/js/motion.js"></script>
-
-
-<script src="/js/schemes/pisces.js"></script>
-
-
-<script src="/js/next-boot.js"></script>
-
-
-
-
-  
-
-
-
-
-  
-<script src="/js/local-search.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-  
-
-</body>
-</html>
+</div><div class="article-tags is-size-7 mb-4"><span class="mr-2"></span><a class="link-muted mr-2" rel="tag" href="/tags/PHP/">PHP</a><a class="link-muted mr-2" rel="tag" href="/tags/%E5%AD%A6%E4%B9%A0/">学习</a></div><!--!--></article></div><!--!--><!--!--></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1 is-sticky"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar is-rounded" src="/img/avatar2.png" alt="-切糕-"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">-切糕-</p><p class="is-size-6 is-block">Seto</p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/archives"><p class="title">1</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/categories"><p class="title">2</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/tags"><p class="title">2</p></a></div></div></nav><div class="level is-mobile"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/Tanglk-Seto"><i class="fab fa-github"></i></a></div></div></div><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">目录</h3><ul class="menu-list"><ul class="menu-list"><li><a class="level is-mobile" href="#引入header和Footer"><span class="level-left"><span class="level-item">引入header和Footer</span></span></a></li></ul><li><a class="level is-mobile" href="#注册登录系统"><span class="level-left"><span class="level-item">注册登录系统</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#数据库"><span class="level-left"><span class="level-item">数据库</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#创建注册表"><span class="level-left"><span class="level-item">创建注册表</span></span></a></li><li><a class="level is-mobile" href="#数据库连接"><span class="level-left"><span class="level-item">数据库连接</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#连接库"><span class="level-left"><span class="level-item">连接库</span></span></a></li><li><a class="level is-mobile" href="#测试连接"><span class="level-left"><span class="level-item">测试连接</span></span></a></li><li><a class="level is-mobile" href="#解决乱码"><span class="level-left"><span class="level-item">解决乱码</span></span></a></li></ul></li></ul></li><li><a class="level is-mobile" href="#登录"><span class="level-left"><span class="level-item">登录</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#获取表单数据"><span class="level-left"><span class="level-item">获取表单数据</span></span></a></li><li><a class="level is-mobile" href="#从数据库获取数据"><span class="level-left"><span class="level-item">从数据库获取数据</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#数据查询语句"><span class="level-left"><span class="level-item">数据查询语句</span></span></a></li><li><a class="level is-mobile" href="#判断账号密码"><span class="level-left"><span class="level-item">判断账号密码</span></span></a></li></ul></li></ul></li><li><a class="level is-mobile" href="#注册"><span class="level-left"><span class="level-item">注册</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#获取表单数据-1"><span class="level-left"><span class="level-item">获取表单数据</span></span></a></li><li><a class="level is-mobile" href="#上传数据到数据库"><span class="level-left"><span class="level-item">上传数据到数据库</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#数据添加语句"><span class="level-left"><span class="level-item">数据添加语句</span></span></a></li><li><a class="level is-mobile" href="#判断用户名占用"><span class="level-left"><span class="level-item">判断用户名占用</span></span></a></li><li><a class="level is-mobile" href="#执行上传数据库"><span class="level-left"><span class="level-item">执行上传数据库</span></span></a></li></ul></li></ul></li></ul></li><li><a class="level is-mobile" href="#选课系统"><span class="level-left"><span class="level-item">选课系统</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#数据库-1"><span class="level-left"><span class="level-item">数据库</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#导入数据库"><span class="level-left"><span class="level-item">导入数据库</span></span></a></li><li><a class="level is-mobile" href="#连接数据库"><span class="level-left"><span class="level-item">连接数据库</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#测试连接-1"><span class="level-left"><span class="level-item">测试连接</span></span></a></li><li><a class="level is-mobile" href="#解决乱码-1"><span class="level-left"><span class="level-item">解决乱码</span></span></a></li></ul></li></ul></li><li><a class="level is-mobile" href="#学生端"><span class="level-left"><span class="level-item">学生端</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#课程预览"><span class="level-left"><span class="level-item">课程预览</span></span></a></li><li><a class="level is-mobile" href="#学生信息"><span class="level-left"><span class="level-item">学生信息</span></span></a></li><li><a class="level is-mobile" href="#学生选课"><span class="level-left"><span class="level-item">学生选课</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#所有课程输出"><span class="level-left"><span class="level-item">所有课程输出</span></span></a></li><li><a class="level is-mobile" href="#查看已选课程"><span class="level-left"><span class="level-item">查看已选课程</span></span></a></li><li><a class="level is-mobile" href="#查看未选课程"><span class="level-left"><span class="level-item">查看未选课程</span></span></a></li><li><a class="level is-mobile" href="#执行"><span class="level-left"><span class="level-item">执行</span></span></a></li><li><a class="level is-mobile" href="#循环执行"><span class="level-left"><span class="level-item">循环执行</span></span></a></li><li><a class="level is-mobile" href="#修改选课"><span class="level-left"><span class="level-item">修改选课</span></span></a></li></ul></li></ul></li><li><a class="level is-mobile" href="#教师端"><span class="level-left"><span class="level-item">教师端</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#浏览课程"><span class="level-left"><span class="level-item">浏览课程</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#查询语句"><span class="level-left"><span class="level-item">查询语句</span></span></a></li><li><a class="level is-mobile" href="#执行语句"><span class="level-left"><span class="level-item">执行语句</span></span></a></li><li><a class="level is-mobile" href="#循环执行-1"><span class="level-left"><span class="level-item">循环执行</span></span></a></li></ul></li><li><a class="level is-mobile" href="#增加课程"><span class="level-left"><span class="level-item">增加课程</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#获取插入数据"><span class="level-left"><span class="level-item">获取插入数据</span></span></a></li><li><a class="level is-mobile" href="#插入语句"><span class="level-left"><span class="level-item">插入语句</span></span></a></li><li><a class="level is-mobile" href="#执行语句-1"><span class="level-left"><span class="level-item">执行语句</span></span></a></li></ul></li><li><a class="level is-mobile" href="#修改课程"><span class="level-left"><span class="level-item">修改课程</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#条件查询"><span class="level-left"><span class="level-item">条件查询</span></span></a></li><li><a class="level is-mobile" href="#获取数据"><span class="level-left"><span class="level-item">获取数据</span></span></a></li><li><a class="level is-mobile" href="#更新语句"><span class="level-left"><span class="level-item">更新语句</span></span></a></li><li><a class="level is-mobile" href="#执行语句-2"><span class="level-left"><span class="level-item">执行语句</span></span></a></li></ul></li><li><a class="level is-mobile" href="#删除课程"><span class="level-left"><span class="level-item">删除课程</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#删除语句"><span class="level-left"><span class="level-item">删除语句</span></span></a></li><li><a class="level is-mobile" href="#执行语句-3"><span class="level-left"><span class="level-item">执行语句</span></span></a></li></ul></li><li><a class="level is-mobile" href="#搜索课程"><span class="level-left"><span class="level-item">搜索课程</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#获取条件"><span class="level-left"><span class="level-item">获取条件</span></span></a></li><li><a class="level is-mobile" href="#模糊搜索"><span class="level-left"><span class="level-item">模糊搜索</span></span></a></li><li><a class="level is-mobile" href="#执行语句-4"><span class="level-left"><span class="level-item">执行语句</span></span></a></li><li><a class="level is-mobile" href="#遍历输出"><span class="level-left"><span class="level-item">遍历输出</span></span></a></li></ul></li></ul></li></ul></li></ul></div></div><style>#toc .menu-list > li > a.is-active + .menu-list { display: block; }#toc .menu-list > li > a + .menu-list { display: none; }</style><script src="/js/toc.js" defer></script></div><div class="column-right-shadow is-hidden-widescreen is-sticky"></div></div><div class="column column-right is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only order-3 is-sticky"><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">分类</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/PHP/"><span class="level-start"><span class="level-item">PHP</span></span><span class="level-end"><span class="level-item tag">1</span></span></a><ul><li><a class="level is-mobile" href="/categories/PHP/%E6%9C%9F%E6%9C%AB%E4%BD%9C%E4%B8%9A/"><span class="level-start"><span class="level-item">期末作业</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></li></ul></div></div></div><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">最新文章</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2021-06-23T03:24:03.000Z">2021-06-23</time></p><p class="title"><a href="/2021/06/23/PHP%E6%9C%9F%E6%9C%AB%E4%BD%9C%E4%B8%9A/">PHP期末作业</a></p><p class="categories"><a href="/categories/PHP/">PHP</a> / <a href="/categories/PHP/%E6%9C%9F%E6%9C%AB%E4%BD%9C%E4%B8%9A/">期末作业</a></p></div></article></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">归档</h3><ul class="menu-list"><li><a class="level is-mobile" href="/archives/2021/06/"><span class="level-start"><span class="level-item">六月 2021</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">标签</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/PHP/"><span class="tag">PHP</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%AD%A6%E4%B9%A0/"><span class="tag">学习</span><span class="tag">1</span></a></div></div></div></div></div><div class="card widget" data-type="links"><div class="card-content"><div class="menu"><h3 class="menu-label">链接</h3><ul class="menu-list"><li><a class="level is-mobile" href="https://hexo.io" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Hexo</span></span><span class="level-right"><span class="level-item tag">hexo.io</span></span></a></li><li><a class="level is-mobile" href="https://bulma.io" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Bulma</span></span><span class="level-right"><span class="level-item tag">bulma.io</span></span></a></li><li><a class="level is-mobile" href="https://bilibili.com" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Bilibili</span></span><span class="level-right"><span class="level-item tag">bilibili.com</span></span></a></li></ul></div></div></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo2.svg" alt="Seto又在摸鱼了!!" height="28"></a><p class="is-size-7"><span>&copy; 快乐 2021 | Seto</span>     (.・ω・.)23333好耶</p></div><div class="level-end"></div></div></div></footer><script src="https://cdnjs.loli.net/ajax/libs/jquery/3.3.1/jquery.min.js"></script><script src="https://cdnjs.loli.net/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script><script src="https://cdnjs.loli.net/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" defer></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdnjs.loli.net/ajax/libs/cookieconsent/3.1.1/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdnjs.loli.net/ajax/libs/lightgallery/1.6.8/js/lightgallery.min.js" defer></script><script src="https://cdnjs.loli.net/ajax/libs/justifiedGallery/3.7.0/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="要找点什么东西吗"></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"要找点什么东西吗","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>
