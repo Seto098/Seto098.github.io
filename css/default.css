@@ -388,7 +388,7 @@ th:not([align]) {
   text-align: left;
 }
 html {
-  background-color: #f7f7f7;
+  background-color: #f0f0f0;
   font-size: 14px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -10930,6 +10930,30 @@ a.article-nav-next span {
   word-wrap: break-word;
   white-space: normal;
 }
+.article {
+  counter-reset: section;
+}
+.article h2 {
+  counter-reset: sub-section;
+}
+.article h3 {
+  counter-reset: composite;
+}
+.article h4 {
+  counter-reset: detail;
+}
+.article h2:before {
+  content: counter(section) " ";
+  counter-increment: section;
+}
+.article h3:before {
+  content: counter(section) "." counter(sub-section) " ";
+  counter-increment: sub-section;
+}
+.article h4:before {
+  content: counter(section) "." counter(sub-section) "." counter(composite) " ";
+  counter-increment: composite;
+}
 .navbar-main {
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
@@ -11254,8 +11278,8 @@ figure.highlight table tr:hover {
 figure.highlight table {
   width: auto;
 }
-figure.highlight table tr td {
-  border: none;
+figure.highlight table tr td:first-child {
+  border-right: 1px rgba(200,200,200,0.6) solid;
 }
 figure.highlight table tr:not(:first-child) td {
   padding-top: 0;
@@ -11270,16 +11294,18 @@ figure.highlight pre {
 figure.highlight pre .line,
 figure.highlight pre code .hljs {
   line-height: 1.5rem;
+  font-size: 14px;
 }
 figure.highlight figcaption,
 figure.highlight .gutter {
-  background: rgba(200,200,200,0);
+  background: rgba(255,255,255,0.02);
 }
 figure.highlight figcaption {
   margin: 0 !important;
   padding: 0.3em 0em 0.3em 0.75em;
   font-style: normal;
-  font-size: 0.8em;
+  font-size: 1.3em;
+  border-bottom: 1px rgba(200,200,200,0.6) solid;
 }
 figure.highlight figcaption * {
   color: inherit;
@@ -11335,6 +11361,9 @@ figure.highlight .section {
 }
 .widget .menu-list li ul {
   margin-right: 0;
+}
+.widget .menu-list a {
+  transition: background-color 0.3s ease-in-out;
 }
 .widget .menu-list .level {
   margin-bottom: 0;
@@ -11613,6 +11642,10 @@ figure.highlight .section {
   background-color: #276cda;
 }
 @media screen and (min-width: 1280px) {
+  .is-3-column .container {
+    max-width: 1216px;
+    width: 1216px;
+  }
   .is-1-column .container,
   .is-2-column .container {
     max-width: 960px;
@@ -11620,6 +11653,10 @@ figure.highlight .section {
   }
 }
 @media screen and (min-width: 1472px) {
+  .is-3-column .container {
+    max-width: 1344px;
+    width: 1344px;
+  }
   .is-2-column .container {
     max-width: 1152px;
     width: 1152px;
