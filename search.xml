@@ -1,14 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>卡通角色建模</title>
+    <url>/2021/09/10/%E5%8D%A1%E9%80%9A%E8%A7%92%E8%89%B2%E5%BB%BA%E6%A8%A1/</url>
+    <content><![CDATA[<blockquote>
+<p>一个卡通素体的建模过程</p>
+</blockquote>
+<hr>
+
+<p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210910171815896.png"></p>
+<p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210910171828390.png"></p>
+<p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210910172015571.png"></p>
+<p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210910172138297.png"></p>
+<p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210910172219684.png"></p>
+<p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210910202448970.png"></p>
+<p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210910202652628.png"></p>
+<p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210910210357295.png"></p>
+<p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210910211411168.png"></p>
+<hr>
+
+<p>这是一条测试o((&gt;ω&lt; ))o</p>
+]]></content>
+      <categories>
+        <category>建模</category>
+      </categories>
+      <tags>
+        <tag>角色建模</tag>
+        <tag>建模流程</tag>
+        <tag>卡通</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>PHP期末作业</title>
     <url>/2021/06/23/PHP%E6%9C%9F%E6%9C%AB%E4%BD%9C%E4%B8%9A/</url>
-    <content><![CDATA[<ul>
+    <content><![CDATA[<blockquote>
+<p>是个PHP的期末作业</p>
+<ul>
 <li>登陆注册</li>
 <li>学生教师端</li>
 <li>增删查改</li>
 </ul>
-<h2 id="引入header和Footer"><a href="#引入header和Footer" class="headerlink" title="引入header和Footer"></a>引入header和Footer</h2><figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="keyword">include</span>(<span class="string">&#x27;Menu/header.php&#x27;</span>);</span><br><span class="line"><span class="keyword">include</span>(<span class="string">&#x27;Menu/footer.php&#x27;</span>);</span><br></pre></td></tr></table></figure>
+</blockquote>
+<hr>
+
+<h1 id="引入header和Footer"><a href="#引入header和Footer" class="headerlink" title="引入header和Footer"></a>引入header和Footer</h1><figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="keyword">include</span>(<span class="string">&#x27;Menu/header.php&#x27;</span>);</span><br><span class="line"><span class="keyword">include</span>(<span class="string">&#x27;Menu/footer.php&#x27;</span>);</span><br></pre></td></tr></table></figure>
 <h1 id="注册登录系统"><a href="#注册登录系统" class="headerlink" title="注册登录系统"></a>注册登录系统</h1><h2 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h2><h3 id="创建注册表"><a href="#创建注册表" class="headerlink" title="创建注册表"></a>创建注册表</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">CREATE TABLE &#96;register&#96; (</span><br><span class="line">  &#96;userId&#96; int(20) NOT NULL AUTO_INCREMENT COMMENT &#39;用户id&#39;,</span><br><span class="line">  &#96;userName&#96; varchar(60) NOT NULL COMMENT &#39;用户名&#39;,</span><br><span class="line">  &#96;passWord&#96; varchar(60) NOT NULL COMMENT &#39;用户密码&#39;,</span><br><span class="line">  &#96;passWordConfirm&#96; varchar(60) NOT NULL COMMENT &#39;确认密码&#39;,</span><br><span class="line">  PRIMARY KEY (&#96;userId&#96;)</span><br><span class="line">) ENGINE&#x3D;MyISAM AUTO_INCREMENT&#x3D;5 DEFAULT CHARSET&#x3D;utf8</span><br></pre></td></tr></table></figure>
 <h3 id="数据库连接"><a href="#数据库连接" class="headerlink" title="数据库连接"></a>数据库连接</h3><h4 id="连接库"><a href="#连接库" class="headerlink" title="连接库"></a>连接库</h4><figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="variable">$con</span>=<span class="keyword">new</span> mysqli(<span class="string">&quot;localhost&quot;</span>,<span class="string">&quot;root&quot;</span>,<span class="string">&quot;&quot;</span>,<span class="string">&quot;user&quot;</span>,<span class="string">&quot;3306&quot;</span>);</span><br></pre></td></tr></table></figure>
 <h4 id="测试连接"><a href="#测试连接" class="headerlink" title="测试连接"></a>测试连接</h4><figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(<span class="variable">$getCon</span>-&gt;connect_error) &#123;</span><br><span class="line">    <span class="keyword">die</span>(<span class="string">&quot;连接失败:&quot;</span>.<span class="variable">$getCon</span>-&gt;connect_error);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -54,36 +89,25 @@
 ]]></content>
       <categories>
         <category>PHP</category>
-        <category>期末作业</category>
       </categories>
       <tags>
-        <tag>PHP</tag>
-        <tag>学习</tag>
+        <tag>期末作业</tag>
       </tags>
   </entry>
   <entry>
-    <title>卡通角色建模</title>
-    <url>/2021/09/10/%E5%8D%A1%E9%80%9A%E8%A7%92%E8%89%B2%E5%BB%BA%E6%A8%A1/</url>
-    <content><![CDATA[<p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210910171815896.png" alt="image-20210910171815896"></p>
-<p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210910171828390.png" alt="image-20210910171828390"></p>
-<p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210910172015571.png" alt="image-20210910172015571"></p>
-<p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210910172138297.png" alt="image-20210910172138297"></p>
-<p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210910172219684.png" alt="image-20210910172219684"></p>
-<p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210910202448970.png" alt="image-20210910202448970"></p>
-<p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210910202652628.png" alt="image-20210910202652628"></p>
-<p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210910210357295.png" alt="image-20210910210357295"></p>
-<p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210910211411168.png" alt="image-20210910211411168"></p>
+    <title>Hexo使用与部署</title>
+    <url>/2021/09/11/Hexo%E4%BD%BF%E7%94%A8%E4%B8%8E%E9%83%A8%E7%BD%B2/</url>
+    <content><![CDATA[<blockquote>
+<p>Hexo使用以及部署到仓库</p>
+</blockquote>
 <hr>
 
-<p>这是一条测试o((&gt;ω&lt; ))o</p>
 ]]></content>
       <categories>
-        <category>建模</category>
+        <category>Hexo</category>
       </categories>
       <tags>
-        <tag>角色建模</tag>
-        <tag>过程总结</tag>
-        <tag>卡通</tag>
+        <tag>icarus</tag>
       </tags>
   </entry>
 </search>
