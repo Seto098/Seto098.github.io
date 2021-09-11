@@ -65,50 +65,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Hexo使用与部署</title>
-    <url>/2021/09/11/Hexo%E4%BD%BF%E7%94%A8%E4%B8%8E%E9%83%A8%E7%BD%B2/</url>
-    <content><![CDATA[<blockquote>
-<p>Hexo使用以及部署到仓库</p>
-</blockquote>
-<hr>
-# Hexo
-
-<p>Hexo安装</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
-<p>创建Hexo所需文件</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo init myBlog</span><br><span class="line">cd myBlog</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
-<p>Hexo目录</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">_config.yml 			# 网站的配置信息，可在此配置大部分的参数</span><br><span class="line">package.json</span><br><span class="line">scaffolds 				# 模版文件夹</span><br><span class="line">source  				# 资源文件夹，除 _posts 文件，其他以下划线_开头的文件或者							文件夹不会被编译打包到public文件夹</span><br><span class="line">	_drafts 			# 草稿文件</span><br><span class="line">	_posts 				# 文章Markdowm文件 </span><br><span class="line">themes  				# 主题文件夹</span><br></pre></td></tr></table></figure>
-<p>Hexo三连</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo clean			#清空已有hexo网站文件</span><br><span class="line">hexo g				#依据网页文本与新的css生成新网站文件</span><br><span class="line">hexo s				#启动本地服务器</span><br></pre></td></tr></table></figure>
-<h1 id="基于GitHub搭建"><a href="#基于GitHub搭建" class="headerlink" title="基于GitHub搭建"></a>基于GitHub搭建</h1><h2 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h2><p>新建<strong>github用户名.github.io</strong>仓库</p>
-<p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210911110714858.png"></p>
-<p>因为这里之前我已经创建了所以报错</p>
-<h2 id="配置SSH-Key"><a href="#配置SSH-Key" class="headerlink" title="配置SSH Key"></a>配置SSH Key</h2><p>要使用 git 工具要先配置SSH key，为部署本地博客到 Github 做准备。</p>
-<p>打开命令行输入 cd ~/.ssh<br>如果没报错或者提示什么的说明就是以前生成过的，直接使用 cat ~/.ssh/id_rsa.pub 命令就可以查看本机上的 SSH key 。</p>
-<p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210911124414154.png"></p>
-<p>如果之前没创建，则全局配置本地用户</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;用户名&quot;</span><br><span class="line">git config --global user.email &quot;邮箱地址&quot;</span><br></pre></td></tr></table></figure>
-<p>生成SSH Key</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &#39;邮箱地址&#39;</span><br></pre></td></tr></table></figure>
-<p>获取SSH Key</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">~&#x2F;.ssh&#x2F;id_rsa.pub</span><br></pre></td></tr></table></figure>
-<p>验证是否添加主机到本机SSH</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
-<p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210911125248177.png"></p>
-<p>打开GitHub设置添加刚生成的SSH Key</p>
-<p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210911125511783.png"></p>
-<p>填入刚查到的SSH Key</p>
-<p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210911125737311.png"></p>
-<h2 id="部署到Github"><a href="#部署到Github" class="headerlink" title="部署到Github"></a>部署到Github</h2>]]></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>icarus</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>卡通角色建模</title>
     <url>/2021/09/10/%E5%8D%A1%E9%80%9A%E8%A7%92%E8%89%B2%E5%BB%BA%E6%A8%A1/</url>
     <content><![CDATA[<blockquote>
@@ -124,7 +80,8 @@
 <p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210910202448970.png"></p>
 <p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210910202652628.png"></p>
 <p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210910210357295.png"></p>
-<p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210910211411168.png"></p>
+<p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210911150140368.png" alt="然后细化？"></p>
+<p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210911151832082.png" alt="再加"></p>
 <hr>
 
 <p>这是一条测试o((&gt;ω&lt; ))o</p>
@@ -134,6 +91,63 @@
       </categories>
       <tags>
         <tag>角色建模,建模流程,卡通</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo使用与部署</title>
+    <url>/2021/09/11/Hexo%E4%BD%BF%E7%94%A8%E4%B8%8E%E9%83%A8%E7%BD%B2/</url>
+    <content><![CDATA[<blockquote>
+<p>Hexo使用以及部署到仓库</p>
+</blockquote>
+<hr>
+
+<h1 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h1><p>Hexo安装</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
+<p>创建Hexo所需文件</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo init myBlog</span><br><span class="line">cd myBlog</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
+<p>Hexo目录</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">_config.yml 		# 网站的配置信息，可在此配置大部分的参数</span><br><span class="line">package.json</span><br><span class="line">scaffolds 			# 模版文件夹</span><br><span class="line">source  			# 资源文件夹，除 _posts 文件，其他以下划线_开头的文件或者							文件夹不会被编译打包到public文件夹</span><br><span class="line">	_drafts 		# 草稿文件</span><br><span class="line">	_posts 			# 文章Markdowm文件 </span><br><span class="line">themes  			# 主题文件夹</span><br></pre></td></tr></table></figure>
+<p>Hexo常用命令</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo -g		#安装</span><br><span class="line">npm update hexo -g		#升级</span><br><span class="line">hexo init 				#初始化博客</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo n 文章		#新建文章</span><br><span class="line">hexo g			  #生成</span><br><span class="line">hexo s			  #启动服务</span><br><span class="line">hexo d			  #部署</span><br><span class="line">hexo clean 		  #清理缓存</span><br></pre></td></tr></table></figure>
+<h1 id="基于GitHub搭建"><a href="#基于GitHub搭建" class="headerlink" title="基于GitHub搭建"></a>基于GitHub搭建</h1><h2 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h2><p>新建<strong>github用户名.github.io</strong>仓库</p>
+<p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210911110714858.png"></p>
+<p>因为这里之前我已经创建了所以报错</p>
+<h2 id="配置SSH-Key"><a href="#配置SSH-Key" class="headerlink" title="配置SSH Key"></a>配置SSH Key</h2><p>要使用 git 工具要先配置SSH key，为部署本地博客到 Github 做准备。</p>
+<p>打开命令行输入 cd ~/.ssh<br>如果没报错或者提示什么的说明就是以前生成过的，直接使用 cat ~/.ssh/id_rsa.pub 命令就可以查看本机上的 SSH key 。</p>
+<p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210911124414154.png"></p>
+<p>如果之前没创建，则全局配置本地用户</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;用户名&quot;</span><br><span class="line">git config --global user.email &quot;邮箱地址&quot;</span><br></pre></td></tr></table></figure>
+<p>生成SSH Key</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &#39;邮箱地址&#39;</span><br></pre></td></tr></table></figure>
+<p>获取SSH Key</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">~&#x2F;.ssh&#x2F;id_rsa.pub</span><br></pre></td></tr></table></figure>
+<p>验证是否设置成功</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+<p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210911125248177.png"></p>
+<p>打开GitHub设置添加刚生成的SSH Key</p>
+<p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210911125511783.png"></p>
+<p>填入刚查到的SSH Key</p>
+<p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210911125737311.png"></p>
+<h2 id="部署到Github"><a href="#部署到Github" class="headerlink" title="部署到Github"></a>部署到Github</h2><p>修改配置文件</p>
+<ul>
+<li><p>修改根目录下**-config.yml**文件</p>
+<blockquote>
+<p>给hexo d命令做部署位置的配置，让hexo知道部署在GitHub仓库</p>
+</blockquote>
+</li>
+</ul>
+<p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210911132636042.png"></p>
+<p>安装部署插件<strong>hexo-deployer-git</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<p>执行命令部署上传</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
+<h1 id="图床"><a href="#图床" class="headerlink" title="图床"></a>图床</h1>]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>icarus</tag>
       </tags>
   </entry>
 </search>
