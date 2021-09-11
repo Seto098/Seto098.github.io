@@ -82,17 +82,15 @@
 <p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210910202652628.png"></p>
 <p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210910210357295.png"></p>
 <p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210911150140368.png" alt="然后细化？"></p>
-<p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210911151832082.png" alt="再加"></p>
-<p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/iGkQ9d7yyt.gif" alt="iGkQ9d7yyt"></p>
-<hr>
-
-<p>这是一条测试o((&gt;ω&lt; ))o</p>
+<p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210911155053864.png" alt="然后就是一直改了，怎么可爱怎么来"></p>
 ]]></content>
       <categories>
         <category>建模</category>
       </categories>
       <tags>
-        <tag>角色建模,建模流程,卡通</tag>
+        <tag>角色建模</tag>
+        <tag>卡通</tag>
+        <tag>建模流程</tag>
       </tags>
   </entry>
   <entry>
@@ -146,10 +144,10 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
 <h1 id="图床"><a href="#图床" class="headerlink" title="图床"></a>图床</h1>]]></content>
       <categories>
-        <category>Hexo</category>
+        <category>博客</category>
       </categories>
       <tags>
-        <tag>icarus</tag>
+        <tag>Hexo</tag>
       </tags>
   </entry>
 </search>
