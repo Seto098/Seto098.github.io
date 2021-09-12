@@ -10296,6 +10296,27 @@ figure.highlight .highlight-body {
   background: #323232;
   color: #fafafa;
 }
+.content table td,
+.content table th {
+  vertical-align: middle;
+  min-width: 6em;
+}
+element.style {
+  margin: auto;
+}
+.title.is-3 {
+  font-size: 20px;
+}
+.article .content h1 {
+  border-top: 1px solid #000;
+  padding-top: 20px;
+  text-align: center;
+}
+.content blockquote {
+  text-align: center;
+  border-left: 5px solid rgba(102,255,204,0.3);
+  border-right: 5px solid rgba(102,255,204,0.3);
+}
 .ml-0,
 .mx-0 {
   margin-left: 0 !important;
