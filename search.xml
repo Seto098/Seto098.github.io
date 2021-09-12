@@ -3,14 +3,12 @@
   <entry>
     <title>PHP期末作业</title>
     <url>/2021/06/23/PHP%E6%9C%9F%E6%9C%AB%E4%BD%9C%E4%B8%9A/</url>
-    <content><![CDATA[<blockquote>
-<p>是个PHP的期末作业</p>
+    <content><![CDATA[<p>是个PHP的期末作业</p>
 <ul>
 <li>登陆注册</li>
 <li>学生教师端</li>
 <li>增删查改</li>
 </ul>
-</blockquote>
 <hr>
 
 <h1 id="引入header和Footer"><a href="#引入header和Footer" class="headerlink" title="引入header和Footer"></a>引入header和Footer</h1><figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="keyword">include</span>(<span class="string">&#x27;Menu/header.php&#x27;</span>);</span><br><span class="line"><span class="keyword">include</span>(<span class="string">&#x27;Menu/footer.php&#x27;</span>);</span><br></pre></td></tr></table></figure>
@@ -67,9 +65,7 @@
   <entry>
     <title>Hexo使用与部署</title>
     <url>/2021/09/11/Hexo%E4%BD%BF%E7%94%A8%E4%B8%8E%E9%83%A8%E7%BD%B2/</url>
-    <content><![CDATA[<blockquote>
-<p>Hexo使用以及部署到仓库</p>
-</blockquote>
+    <content><![CDATA[<p>Hexo使用以及部署到仓库</p>
 <hr>
 
 <h1 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h1><p>Hexo安装</p>
@@ -124,9 +120,7 @@
   <entry>
     <title>卡通角色建模</title>
     <url>/2021/09/10/%E5%8D%A1%E9%80%9A%E8%A7%92%E8%89%B2%E5%BB%BA%E6%A8%A1/</url>
-    <content><![CDATA[<blockquote>
-<p>做的丑也要做的一个卡通素体的建模过程</p>
-</blockquote>
+    <content><![CDATA[<p>做的丑也要做的一个卡通素体的建模过程</p>
 <hr>
 # 头部
 
@@ -148,6 +142,153 @@
         <tag>角色建模</tag>
         <tag>建模流程</tag>
         <tag>卡通</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>角色设定</title>
+    <url>/2021/07/09/%E4%B8%80%E4%B8%AA%E5%9F%BA%E4%BA%8E%E6%9E%B6%E7%A9%BA%E4%B8%96%E7%95%8C%E7%9A%84%E4%BC%81%E5%88%92-%E8%AE%BE%E5%AE%9A-%E8%A7%92%E8%89%B2%E8%AE%BE%E5%AE%9A/</url>
+    <content><![CDATA[<p>怎么能没有角色呢！</p>
+<hr>
+
+<h1 id="鸫"><a href="#鸫" class="headerlink" title="鸫"></a>鸫</h1><table>
+<thead>
+<tr>
+<th align="center">鶇<br />Tsugumi</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">灰蓝色到肩头发<br />提不起干劲<br />黑眼圈<br /></td>
+</tr>
+<tr>
+<td align="center">冷静<br />在做事的时候甚至能不吃饭<br />是家里蹲<br /></td>
+</tr>
+<tr>
+<td align="center">买了一些没–开刃的刀具<br />会弹电吉他？<br />快入门的程序员</td>
+</tr>
+<tr>
+<td align="center">日本刀、唐刀、苗刀<br />电吉他!?<br /></td>
+</tr>
+<tr>
+<td align="center">深蓝发带<br />穿白衬衫<br />蝴蝶结或领带<br />牛仔布裙<br />高帮鞋子<br /></td>
+</tr>
+<tr>
+<td align="center">白灰黑<br />深蓝<br /></td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>啊啊，今天也好热，一点都没有出门的干劲呢。</p>
+</blockquote>
+<blockquote>
+<p>为什么是电吉他？这个比刀还好用！</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>世界</category>
+      </categories>
+      <tags>
+        <tag>角色</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>资料参考</title>
+    <url>/2021/07/09/%E4%B8%80%E4%B8%AA%E5%9F%BA%E4%BA%8E%E6%9E%B6%E7%A9%BA%E4%B8%96%E7%95%8C%E7%9A%84%E4%BC%81%E5%88%92-%E8%AE%BE%E5%AE%9A-%E8%B5%84%E6%96%99%E5%8F%82%E8%80%83/</url>
+    <content><![CDATA[<p>整合世界观所需资料。</p>
+<hr>
+
+<h1 id="关于人类消失"><a href="#关于人类消失" class="headerlink" title="关于人类消失"></a>关于人类消失</h1><table>
+<thead>
+<tr>
+<th align="right"></th>
+<th align="left"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">瞬间</td>
+<td align="left">交通系统瘫痪，车祸，飞机耗尽燃油下坠。</td>
+</tr>
+<tr>
+<td align="right">一天</td>
+<td align="left">发电系统瘫痪，全球停电。工业设备-制冷设备停止运行，有毒液体气化排放大气</td>
+</tr>
+<tr>
+<td align="right">三天</td>
+<td align="left">排水系统瘫痪，污水排放。</td>
+</tr>
+<tr>
+<td align="right">一周</td>
+<td align="left">食物腐烂。核反应堆失控。冷却水流动停止，温度太高起火，核辐射泄漏。</td>
+</tr>
+<tr>
+<td align="right">一个月</td>
+<td align="left">地下水管道破裂，水涌出地面。核辐射，生物死亡。</td>
+</tr>
+<tr>
+<td align="right">六个月</td>
+<td align="left">卫星开始脱离轨道，坠毁大气层。</td>
+</tr>
+<tr>
+<td align="right">一年</td>
+<td align="left">城市被侵蚀。</td>
+</tr>
+<tr>
+<td align="right">五年</td>
+<td align="left">植物疯长。</td>
+</tr>
+<tr>
+<td align="right">二十年</td>
+<td align="left">生物生长与繁衍。</td>
+</tr>
+<tr>
+<td align="right">五十年</td>
+<td align="left">建筑倒塌。</td>
+</tr>
+<tr>
+<td align="right">……</td>
+<td align="left">……</td>
+</tr>
+<tr>
+<td align="right">……</td>
+<td align="left">新的冰河世纪</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>世界</category>
+      </categories>
+      <tags>
+        <tag>资料</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>分镜</title>
+    <url>/2021/07/09/%E4%B8%80%E4%B8%AA%E5%9F%BA%E4%BA%8E%E6%9E%B6%E7%A9%BA%E4%B8%96%E7%95%8C%E7%9A%84%E4%BC%81%E5%88%92-%E8%AE%BE%E5%AE%9A-%E5%89%A7%E6%9C%AC/</url>
+    <content><![CDATA[<p>造一个世界。</p>
+<hr>
+
+<h1 id="起源"><a href="#起源" class="headerlink" title="起源"></a>起源</h1><h2 id="序章"><a href="#序章" class="headerlink" title="序章"></a>序章</h2><h3 id="常1"><a href="#常1" class="headerlink" title="常1"></a>常1</h3><blockquote>
+<p>夏-10AM,家</p>
+</blockquote>
+<blockquote>
+<p>就跟平时一样，P1在家里面也是睡到十点钟起床然后做些普通的事情，穿衣服、烧开水、煎鸡蛋、打瞌睡、开冰箱、吃早餐、刷手机。<br>“好热。”<br>带上相机、检查电量。<br>出门、锁门、丢垃圾、下楼梯……</p>
+</blockquote>
+<h3 id="常2"><a href="#常2" class="headerlink" title="常2"></a>常2</h3><blockquote>
+<p>夏-10AM,桥边</p>
+</blockquote>
+<blockquote>
+<p>也得压抑，吸入的空气似乎也让人窒息</p>
+</blockquote>
+<h3 id="消失"><a href="#消失" class="headerlink" title="消失"></a>消失</h3><blockquote>
+<p>公园，夏，中午。<br>世界一切依旧，但几分钟后引人注目的光束和紫色漩涡云一点都感觉不到正常，甚至还有点诡异。<br>“怎么回事！”<br>起身乱跑。<br>但连平时热闹的街上都没有任何动静，全都安静了下来。</p>
+</blockquote>
+<h3 id="恐慌"><a href="#恐慌" class="headerlink" title="恐慌"></a>恐慌</h3><blockquote>
+<p>街上，夏，下午。<br>体力不支，累倒在了电话亭旁。<br>交通工具都停下来了，人也消失不见。<br>似乎是光束的原因。<br>“那只能往那边跑了。”</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>世界</category>
+      </categories>
+      <tags>
+        <tag>剧情</tag>
       </tags>
   </entry>
 </search>
