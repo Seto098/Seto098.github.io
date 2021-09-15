@@ -77,26 +77,42 @@
 <p>Hexo常用命令</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo -g------安装</span><br><span class="line">npm update hexo -g-------升级</span><br><span class="line">hexo init----------------初始化博客</span><br></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo n 文章---------新建文章</span><br><span class="line">hexo g-------------生成</span><br><span class="line">hexo s-------------启动服务</span><br><span class="line">hexo d-------------部署</span><br><span class="line">hexo clean---------清理缓存</span><br></pre></td></tr></table></figure>
-<h1 id="基于GitHub搭建"><a href="#基于GitHub搭建" class="headerlink" title="基于GitHub搭建"></a>基于GitHub搭建</h1><h2 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h2><p>新建<strong>github用户名.github.io</strong>仓库</p>
-<p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210911110714858.png"></p>
-<p>因为这里之前我已经创建了所以报错</p>
-<h2 id="配置SSH-Key"><a href="#配置SSH-Key" class="headerlink" title="配置SSH Key"></a>配置SSH Key</h2><p>要使用 git 工具要先配置SSH key，为部署本地博客到 Github 做准备。</p>
-<p>打开命令行输入 cd ~/.ssh<br>如果没报错或者提示什么的说明就是以前生成过的，直接使用 cat ~/.ssh/id_rsa.pub 命令就可以查看本机上的 SSH key 。</p>
+<h1 id="创建SSH-Key"><a href="#创建SSH-Key" class="headerlink" title="创建SSH Key"></a>创建SSH Key</h1><p>要使用 git 工具要先配置SSH key，为部署本地博客到 Github 做准备。</p>
+<p>在<code>git Bash Here</code>中输入<code>cd ~/.ssh</code> </p>
+<p>如果没报错或者提示什么的说明就是以前生成过的，直接使用 <code>cat ~/.ssh/id_rsa.pub</code></p>
+<p> 命令就可以查看本机上的 SSH key 。</p>
 <p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210911124414154.png"></p>
 <p>如果之前没创建，则全局配置本地用户</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;用户名&quot;</span><br><span class="line">git config --global user.email &quot;邮箱地址&quot;</span><br></pre></td></tr></table></figure>
 <p>生成SSH Key</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &#39;邮箱地址&#39;</span><br></pre></td></tr></table></figure>
-<p>获取SSH Key</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">~&#x2F;.ssh&#x2F;id_rsa.pub</span><br></pre></td></tr></table></figure>
-<p>验证是否设置成功</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
-<p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210911125248177.png"></p>
+<p>然后回车，出现 <code>Overwrite (y/n)?</code>,则输入<code>y</code>，若没有则一直回车。</p>
+<p>生成的ssh路径在<code>C:\Users\Seto\.ssh</code><br><code>id_rsa</code>私人密钥<br><code>id_rsa.pub</code>公共密钥<br>用记事本打开复制<code>id_rsa.pub</code>里面的内容</p>
+<p>或直接在<code>git Bash Here</code>获取SSH Key</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cat ~&#x2F;.ssh&#x2F;id_rsa.pub</span><br></pre></td></tr></table></figure>
+
+
+<h1 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h1><h2 id="基于GitHub创建"><a href="#基于GitHub创建" class="headerlink" title="基于GitHub创建"></a>基于GitHub创建</h2><p>新建<strong>github用户名.github.io</strong>仓库</p>
+<p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210915171736750.png"></p>
 <p>打开GitHub设置添加刚生成的SSH Key</p>
 <p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210911125511783.png"></p>
 <p>填入刚查到的SSH Key</p>
 <p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210911125737311.png"></p>
-<h2 id="部署到Github"><a href="#部署到Github" class="headerlink" title="部署到Github"></a>部署到Github</h2><p>修改配置文件</p>
+<p>验证是否设置成功</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+<p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210911125248177.png"></p>
+<h2 id="基于Gitee创建"><a href="#基于Gitee创建" class="headerlink" title="基于Gitee创建"></a>基于Gitee创建</h2><p>新建仓库</p>
+<p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210915165008586.png"></p>
+<p>添加公链</p>
+<p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210915165204902.png"></p>
+<p>验证是否设置成功</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ssh -T git@gitee.com</span><br></pre></td></tr></table></figure>
+<p>输入yes并回车<img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210915204141728.png"></p>
+<h2 id="部署到仓库"><a href="#部署到仓库" class="headerlink" title="部署到仓库"></a>部署到仓库</h2><p>安装部署插件<strong>hexo-deployer-git</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="部署到GitHub"><a href="#部署到GitHub" class="headerlink" title="部署到GitHub"></a>部署到GitHub</h3><p>修改配置文件</p>
 <ul>
 <li><p>修改根目录下**-config.yml**文件</p>
 <blockquote>
@@ -105,8 +121,6 @@
 </li>
 </ul>
 <p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210911132636042.png"></p>
-<p>安装部署插件<strong>hexo-deployer-git</strong></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 <p>执行命令部署上传</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
 <h1 id="图床"><a href="#图床" class="headerlink" title="图床"></a>图床</h1>]]></content>
@@ -115,6 +129,23 @@
       </categories>
       <tags>
         <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>脚本</title>
+    <url>/2021/07/09/%E4%B8%80%E4%B8%AA%E5%9F%BA%E4%BA%8E%E6%9E%B6%E7%A9%BA%E4%B8%96%E7%95%8C%E7%9A%84%E4%BC%81%E5%88%92-%E8%84%9A%E6%9C%AC-%E8%84%9A%E6%9C%AC/</url>
+    <content><![CDATA[<blockquote>
+<p>造一个世界。</p>
+</blockquote>
+<p>在写了（</p>
+]]></content>
+      <categories>
+        <category>世界</category>
+      </categories>
+      <tags>
+        <tag>剧情</tag>
+        <tag>分镜</tag>
+        <tag>脚本</tag>
       </tags>
   </entry>
   <entry>
@@ -134,11 +165,15 @@
 <p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210911150140368.png" alt="然后细化？"></p>
 <p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210911155053864.png" alt="然后就是一直改了，怎么可爱怎么来"></p>
 <h1 id="身体"><a href="#身体" class="headerlink" title="身体"></a>身体</h1><p>我也不知道咋整，靠感觉吧</p>
-<h2 id="测试一"><a href="#测试一" class="headerlink" title="测试一"></a>测试一</h2><p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210913165032995.png" alt="image-20210913165032995"></p>
-<p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210913165341039.png" alt="image-20210913165341039"></p>
-<p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210913165657516.png" alt="image-20210913165657516"></p>
-<p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210913170811829.png" alt="image-20210913170811829"></p>
-<p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210913173454832.png" alt="image-20210913173454832"></p>
+<h2 id="测试一"><a href="#测试一" class="headerlink" title="测试一"></a>测试一</h2><p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210913165032995.png"></p>
+<p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210913165341039.png"></p>
+<p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210913165657516.png"></p>
+<p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210913170811829.png"></p>
+<p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210913173454832.png"></p>
+<h1 id="手部"><a href="#手部" class="headerlink" title="手部"></a>手部</h1><p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210913211343504.png"></p>
+<p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210913215206630.png"></p>
+<p><img src="https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/image-20210913222213028.png" alt="不做了，直接套原来的"></p>
+<p>好吧，我已经不知道怎么做手了，直接用以前做完的。</p>
 ]]></content>
       <categories>
         <category>建模</category>
@@ -150,19 +185,20 @@
       </tags>
   </entry>
   <entry>
-    <title>脚本</title>
-    <url>/2021/07/09/%E4%B8%80%E4%B8%AA%E5%9F%BA%E4%BA%8E%E6%9E%B6%E7%A9%BA%E4%B8%96%E7%95%8C%E7%9A%84%E4%BC%81%E5%88%92-%E8%84%9A%E6%9C%AC-%E8%84%9A%E6%9C%AC/</url>
+    <title>世界设定</title>
+    <url>/2021/09/12/%E4%B8%80%E4%B8%AA%E5%9F%BA%E4%BA%8E%E6%9E%B6%E7%A9%BA%E4%B8%96%E7%95%8C%E7%9A%84%E4%BC%81%E5%88%92-%E8%AE%BE%E5%AE%9A-%E4%B8%96%E7%95%8C%E8%AE%BE%E5%AE%9A/</url>
     <content><![CDATA[<blockquote>
-<p>造一个世界。</p>
+<p>这是一个架空世界的设定</p>
 </blockquote>
+<p>[TOC]</p>
+<p>在写了（</p>
 ]]></content>
       <categories>
         <category>世界</category>
       </categories>
       <tags>
-        <tag>剧情</tag>
-        <tag>分镜</tag>
-        <tag>脚本</tag>
+        <tag>架空世界</tag>
+        <tag>设定</tag>
       </tags>
   </entry>
   <entry>
@@ -229,24 +265,8 @@
         <category>世界</category>
       </categories>
       <tags>
+        <tag>设定</tag>
         <tag>角色</tag>
-        <tag>设定</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>世界设定</title>
-    <url>/2021/09/12/%E4%B8%80%E4%B8%AA%E5%9F%BA%E4%BA%8E%E6%9E%B6%E7%A9%BA%E4%B8%96%E7%95%8C%E7%9A%84%E4%BC%81%E5%88%92-%E8%AE%BE%E5%AE%9A-%E4%B8%96%E7%95%8C%E8%AE%BE%E5%AE%9A/</url>
-    <content><![CDATA[<blockquote>
-<p>这是一个架空世界的设定</p>
-</blockquote>
-<p>[TOC]</p>
-<h1 id=""><a href="#" class="headerlink" title=""></a></h1>]]></content>
-      <categories>
-        <category>世界</category>
-      </categories>
-      <tags>
-        <tag>架空世界</tag>
-        <tag>设定</tag>
       </tags>
   </entry>
   <entry>
