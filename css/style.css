@@ -530,12 +530,12 @@ table th {
   font-size: 1.25rem !important;
 }
 .is-size-6,
-article.media .title {
+.title {
   font-size: 1rem !important;
 }
 .is-size-7,
-article.media .date,
-article.media .categories,
+.date,
+.categories,
 .article-licensing .licensing-title a,
 .article-licensing .licensing-meta h6 {
   font-size: 0.85rem !important;
@@ -877,7 +877,7 @@ article.media .categories,
   text-transform: lowercase !important;
 }
 .is-uppercase,
-article.media .categories {
+.categories {
   text-transform: uppercase !important;
 }
 .is-italic {
@@ -1513,7 +1513,7 @@ a.has-text-grey-lightest:focus {
 }
 .card {
   background-color: #fff;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05), 0 0 1px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05), 0 0 1px rgba(0,0,0,0.3);
   color: #4a4a4a;
   max-width: 100%;
   position: relative;
@@ -4013,144 +4013,144 @@ fieldset[disabled] .button.is-black.is-inverted.is-outlined {
   color: #fff;
 }
 .button.is-light,
-article.article .article-more {
+.article .article-more {
   background-color: #f5f5f5;
   border-color: transparent;
   color: rgba(0,0,0,0.7);
 }
 .button.is-light:hover,
-article.article .article-more:hover,
+.article .article-more:hover,
 .button.is-light.is-hovered,
-article.article .article-more.is-hovered {
+.article .article-more.is-hovered {
   background-color: #eee;
   border-color: transparent;
   color: rgba(0,0,0,0.7);
 }
 .button.is-light:focus,
-article.article .article-more:focus,
+.article .article-more:focus,
 .button.is-light.is-focused,
-article.article .article-more.is-focused {
+.article .article-more.is-focused {
   border-color: transparent;
   color: rgba(0,0,0,0.7);
 }
 .button.is-light:focus:not(:active),
-article.article .article-more:focus:not(:active),
+.article .article-more:focus:not(:active),
 .button.is-light.is-focused:not(:active),
-article.article .article-more.is-focused:not(:active) {
+.article .article-more.is-focused:not(:active) {
   box-shadow: 0 0 0 0.125em rgba(245,245,245,0.25);
 }
 .button.is-light:active,
-article.article .article-more:active,
+.article .article-more:active,
 .button.is-light.is-active,
-article.article .article-more.is-active {
+.article .article-more.is-active {
   background-color: #e8e8e8;
   border-color: transparent;
   color: rgba(0,0,0,0.7);
 }
 .button.is-light[disabled],
-article.article .article-more[disabled],
+.article .article-more[disabled],
 fieldset[disabled] .button.is-light,
-fieldset[disabled] article.article .article-more {
+fieldset[disabled] .article .article-more {
   background-color: #f5f5f5;
   border-color: transparent;
   box-shadow: none;
 }
 .button.is-light.is-inverted,
-article.article .article-more.is-inverted {
+.article .article-more.is-inverted {
   background-color: rgba(0,0,0,0.7);
   color: #f5f5f5;
 }
 .button.is-light.is-inverted:hover,
-article.article .article-more.is-inverted:hover,
+.article .article-more.is-inverted:hover,
 .button.is-light.is-inverted.is-hovered,
-article.article .article-more.is-inverted.is-hovered {
+.article .article-more.is-inverted.is-hovered {
   background-color: rgba(0,0,0,0.7);
 }
 .button.is-light.is-inverted[disabled],
-article.article .article-more.is-inverted[disabled],
+.article .article-more.is-inverted[disabled],
 fieldset[disabled] .button.is-light.is-inverted,
-fieldset[disabled] article.article .article-more.is-inverted {
+fieldset[disabled] .article .article-more.is-inverted {
   background-color: rgba(0,0,0,0.7);
   border-color: transparent;
   box-shadow: none;
   color: #f5f5f5;
 }
 .button.is-light.is-loading::after,
-article.article .article-more.is-loading::after {
+.article .article-more.is-loading::after {
   border-color: transparent transparent rgba(0,0,0,0.7) rgba(0,0,0,0.7) !important;
 }
 .button.is-light.is-outlined,
-article.article .article-more.is-outlined {
+.article .article-more.is-outlined {
   background-color: transparent;
   border-color: #f5f5f5;
   color: #f5f5f5;
 }
 .button.is-light.is-outlined:hover,
-article.article .article-more.is-outlined:hover,
+.article .article-more.is-outlined:hover,
 .button.is-light.is-outlined.is-hovered,
-article.article .article-more.is-outlined.is-hovered,
+.article .article-more.is-outlined.is-hovered,
 .button.is-light.is-outlined:focus,
-article.article .article-more.is-outlined:focus,
+.article .article-more.is-outlined:focus,
 .button.is-light.is-outlined.is-focused,
-article.article .article-more.is-outlined.is-focused {
+.article .article-more.is-outlined.is-focused {
   background-color: #f5f5f5;
   border-color: #f5f5f5;
   color: rgba(0,0,0,0.7);
 }
 .button.is-light.is-outlined.is-loading::after,
-article.article .article-more.is-outlined.is-loading::after {
+.article .article-more.is-outlined.is-loading::after {
   border-color: transparent transparent #f5f5f5 #f5f5f5 !important;
 }
 .button.is-light.is-outlined.is-loading:hover::after,
-article.article .article-more.is-outlined.is-loading:hover::after,
+.article .article-more.is-outlined.is-loading:hover::after,
 .button.is-light.is-outlined.is-loading.is-hovered::after,
-article.article .article-more.is-outlined.is-loading.is-hovered::after,
+.article .article-more.is-outlined.is-loading.is-hovered::after,
 .button.is-light.is-outlined.is-loading:focus::after,
-article.article .article-more.is-outlined.is-loading:focus::after,
+.article .article-more.is-outlined.is-loading:focus::after,
 .button.is-light.is-outlined.is-loading.is-focused::after,
-article.article .article-more.is-outlined.is-loading.is-focused::after {
+.article .article-more.is-outlined.is-loading.is-focused::after {
   border-color: transparent transparent rgba(0,0,0,0.7) rgba(0,0,0,0.7) !important;
 }
 .button.is-light.is-outlined[disabled],
-article.article .article-more.is-outlined[disabled],
+.article .article-more.is-outlined[disabled],
 fieldset[disabled] .button.is-light.is-outlined,
-fieldset[disabled] article.article .article-more.is-outlined {
+fieldset[disabled] .article .article-more.is-outlined {
   background-color: transparent;
   border-color: #f5f5f5;
   box-shadow: none;
   color: #f5f5f5;
 }
 .button.is-light.is-inverted.is-outlined,
-article.article .article-more.is-inverted.is-outlined {
+.article .article-more.is-inverted.is-outlined {
   background-color: transparent;
   border-color: rgba(0,0,0,0.7);
   color: rgba(0,0,0,0.7);
 }
 .button.is-light.is-inverted.is-outlined:hover,
-article.article .article-more.is-inverted.is-outlined:hover,
+.article .article-more.is-inverted.is-outlined:hover,
 .button.is-light.is-inverted.is-outlined.is-hovered,
-article.article .article-more.is-inverted.is-outlined.is-hovered,
+.article .article-more.is-inverted.is-outlined.is-hovered,
 .button.is-light.is-inverted.is-outlined:focus,
-article.article .article-more.is-inverted.is-outlined:focus,
+.article .article-more.is-inverted.is-outlined:focus,
 .button.is-light.is-inverted.is-outlined.is-focused,
-article.article .article-more.is-inverted.is-outlined.is-focused {
+.article .article-more.is-inverted.is-outlined.is-focused {
   background-color: rgba(0,0,0,0.7);
   color: #f5f5f5;
 }
 .button.is-light.is-inverted.is-outlined.is-loading:hover::after,
-article.article .article-more.is-inverted.is-outlined.is-loading:hover::after,
+.article .article-more.is-inverted.is-outlined.is-loading:hover::after,
 .button.is-light.is-inverted.is-outlined.is-loading.is-hovered::after,
-article.article .article-more.is-inverted.is-outlined.is-loading.is-hovered::after,
+.article .article-more.is-inverted.is-outlined.is-loading.is-hovered::after,
 .button.is-light.is-inverted.is-outlined.is-loading:focus::after,
-article.article .article-more.is-inverted.is-outlined.is-loading:focus::after,
+.article .article-more.is-inverted.is-outlined.is-loading:focus::after,
 .button.is-light.is-inverted.is-outlined.is-loading.is-focused::after,
-article.article .article-more.is-inverted.is-outlined.is-loading.is-focused::after {
+.article .article-more.is-inverted.is-outlined.is-loading.is-focused::after {
   border-color: transparent transparent #f5f5f5 #f5f5f5 !important;
 }
 .button.is-light.is-inverted.is-outlined[disabled],
-article.article .article-more.is-inverted.is-outlined[disabled],
+.article .article-more.is-inverted.is-outlined[disabled],
 fieldset[disabled] .button.is-light.is-inverted.is-outlined,
-fieldset[disabled] article.article .article-more.is-inverted.is-outlined {
+fieldset[disabled] .article .article-more.is-inverted.is-outlined {
   background-color: transparent;
   border-color: rgba(0,0,0,0.7);
   box-shadow: none;
@@ -10281,6 +10281,41 @@ body > .section {
     background: rgba(0,0,0,0.24);
   }
 }
+img {
+  display: block;
+  margin: auto;
+}
+.caption {
+  margin-top: -25px;
+}
+.content blockquote {
+  border-left: 5px solid rgba(102,255,204,0.3);
+}
+figure.highlight .highlight-body {
+  background: #323232;
+  color: #fafafa;
+}
+.content table td,
+.content table th {
+  vertical-align: middle;
+  min-width: 6em;
+}
+.title.is-3 {
+  font-size: 20px;
+}
+.article .content h1 {
+  border-top: 1px solid #000;
+  padding-top: 20px;
+  text-align: center;
+}
+.content blockquote {
+  text-align: center;
+  border-left: 5px solid #ffabad;
+  border-right: 5px solid #ffabad;
+}
+table thead {
+  background: rgba(240,240,240,0.5);
+}
 .ml-0,
 .mx-0 {
   margin-left: 0 !important;
@@ -10788,70 +10823,70 @@ article.media .image {
   width: 64px;
   height: 64px;
 }
-article.media .image img {
+margin auto img {
   object-fit: cover;
   width: 100%;
   height: 100%;
 }
-article.media .title {
+.title {
   margin-bottom: 0.25em;
 }
-article.media .media-content {
+.media-content {
   color: #7a7a7a;
 }
-article.media .media-content .title {
+.media-content .title {
   margin: 0;
   line-height: inherit;
 }
-article.article .article-meta,
-article.article .article-tags {
+.article .article-meta,
+.article .article-tags {
   color: #7a7a7a;
 }
-article.article .article-meta {
+.article .article-meta {
   overflow-x: auto;
   margin-bottom: 0.5rem;
 }
-article.article .content {
+.article .content {
   word-wrap: break-word;
   font-size: 1.1rem;
 }
-article.article .content h1 {
+.article .content h1 {
   font-size: 1.75em;
 }
-article.article .content h2 {
+.article .content h2 {
   font-size: 1.5em;
 }
-article.article .content h3 {
+.article .content h3 {
   font-size: 1.25em;
 }
-article.article .content h4 {
+.article .content h4 {
   font-size: 1.125em;
 }
-article.article .content h5 {
+.article .content h5 {
   font-size: 1em;
 }
-article.article .content pre {
+.article .content pre {
   font-size: 0.85em;
 }
-article.article .content code {
+.article .content code {
   padding: 0;
   background: transparent;
   overflow-wrap: break-word;
 }
-article.article .content blockquote.pullquote {
+.article .content blockquote.pullquote {
   float: right;
   max-width: 50%;
   font-size: 1.15rem;
   position: relative;
 }
-article.article .content blockquote footer strong + cite {
+.article .content blockquote footer strong + cite {
   margin-left: 0.5em;
 }
-article.article .content .message.message-immersive {
+.article .content .message.message-immersive {
   border-radius: 0;
   margin: 0 -1.5rem 1.5rem -1.5rem;
 }
-article.article .content .message.message-immersive .message-body {
+.article .content .message.message-immersive .message-body {
   border: none;
 }
 .rtl {
@@ -11034,7 +11069,7 @@ footer.footer .level-end .field {
 .pagination .pagination-next {
   border: none;
   background: #fff;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05), 0 0 1px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05), 0 0 1px rgba(0,0,0,0.3);
 }
 .pagination .pagination-link.is-current {
   background: #3273dc;
@@ -11118,7 +11153,7 @@ footer.footer .level-end .field {
   z-index: 101;
   display: flex;
   overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05), 0 0 1px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05), 0 0 1px rgba(0,0,0,0.3);
   border-radius: 4px;
   background-color: #f5f5f5;
   width: 540px;
@@ -11233,7 +11268,7 @@ footer.footer .level-end .field {
 .searchbox .searchbox-pagination .searchbox-pagination-link {
   overflow: hidden;
   padding: 0.5em 0.8em;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05), 0 0 1px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05), 0 0 1px rgba(0,0,0,0.3);
   border-radius: 4px;
   background-color: #fff;
 }
@@ -11279,7 +11314,7 @@ figure.highlight table {
   width: auto;
 }
 figure.highlight table tr td:first-child {
-  border-right: 1px rgba(200,200,200,0.6) solid;
+  border-right: 0px rgba(200,200,200,0) solid;
 }
 figure.highlight table tr:not(:first-child) td {
   padding-top: 0;
@@ -11293,19 +11328,18 @@ figure.highlight pre {
 }
 figure.highlight pre .line,
 figure.highlight pre code .hljs {
-  line-height: 1.5rem;
+  line-height: 1.2rem;
   font-size: 14px;
 }
-figure.highlight figcaption,
-figure.highlight .gutter {
-  background: rgba(255,255,255,0.02);
+figure.highlight figcaption {
+  background: #1e1e1e;
 }
 figure.highlight figcaption {
   margin: 0 !important;
   padding: 0.3em 0em 0.3em 0.75em;
   font-style: normal;
   font-size: 1.3em;
-  border-bottom: 1px rgba(200,200,200,0.6) solid;
+  border-bottom: 1px #fafafa solid;
 }
 figure.highlight figcaption * {
   color: inherit;
@@ -11399,7 +11433,7 @@ figure.highlight .section {
   bottom: 2.5em;
   line-height: 0;
   overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05), 0 0 1px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05), 0 0 1px rgba(0,0,0,0.3);
   border-radius: 4px;
 }
 .donate .qrcode img {
@@ -11609,7 +11643,7 @@ figure.highlight .section {
 }
 .cc-window.cc-floating {
   border-radius: 4px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05), 0 0 1px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05), 0 0 1px rgba(0,0,0,0.3);
 }
 .cc-window.cc-banner {
   background-color: #f9f9f9 !important;
