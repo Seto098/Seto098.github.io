@@ -1513,7 +1513,7 @@ a.has-text-grey-lightest:focus {
 }
 .card {
   background-color: transparent;
-  box-shadow: none, 0 0 1px rgba(0,0,0,0.3);
+  box-shadow: none, 0 0 2px rgba(0,0,0,0.5);
   color: #cdcdcd;
   max-width: 100%;
   position: relative;
@@ -10301,6 +10301,10 @@ figure.highlight .highlight-body {
   vertical-align: middle;
   min-width: 6em;
 }
+* {
+  padding: 0;
+  margin: 0;
+}
 .title.is-3 {
   font-size: 20px;
 }
@@ -10316,6 +10320,36 @@ figure.highlight .highlight-body {
 }
 table thead {
   background: rgba(240,240,240,0.5);
+}
+.content table td,
+.content table th {
+  min-width: 0;
+}
+body {
+  background: url("https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/20210509183542_64267.jpg") no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.section {
+  margin-top: 40px;
+}
+.post-navigation {
+  background: #fafafa;
+  border-radius: 5px;
+}
+.navbar,
+.navbar-main {
+  position: fixed;
+  margin: auto;
+  z-index: 10000;
+  width: 100%;
+  border-bottom: 2px solid #000;
+}
+.footer {
+  background: linear-gradient(rgba(0,0,0,0), #000 95%);
+}
+.level {
+  color: #fafafa;
 }
 .ml-0,
 .mx-0 {
@@ -11070,7 +11104,7 @@ footer.footer .level-end .field {
 .pagination .pagination-next {
   border: none;
   background: #000;
-  box-shadow: none, 0 0 1px rgba(0,0,0,0.3);
+  box-shadow: none, 0 0 2px rgba(0,0,0,0.5);
 }
 .pagination .pagination-link.is-current {
   background: #02d7f2;
@@ -11154,7 +11188,7 @@ footer.footer .level-end .field {
   z-index: 101;
   display: flex;
   overflow: hidden;
-  box-shadow: none, 0 0 1px rgba(0,0,0,0.3);
+  box-shadow: none, 0 0 2px rgba(0,0,0,0.5);
   border-radius: 0;
   background-color: #050a0e;
   width: 540px;
@@ -11269,7 +11303,7 @@ footer.footer .level-end .field {
 .searchbox .searchbox-pagination .searchbox-pagination-link {
   overflow: hidden;
   padding: 0.5em 0.8em;
-  box-shadow: none, 0 0 1px rgba(0,0,0,0.3);
+  box-shadow: none, 0 0 2px rgba(0,0,0,0.5);
   border-radius: 0;
   background-color: #050a0e;
 }
@@ -11434,7 +11468,7 @@ figure.highlight .section {
   bottom: 2.5em;
   line-height: 0;
   overflow: hidden;
-  box-shadow: none, 0 0 1px rgba(0,0,0,0.3);
+  box-shadow: none, 0 0 2px rgba(0,0,0,0.5);
   border-radius: 0;
 }
 .donate .qrcode img {
@@ -11644,7 +11678,7 @@ figure.highlight .section {
 }
 .cc-window.cc-floating {
   border-radius: 0;
-  box-shadow: none, 0 0 1px rgba(0,0,0,0.3);
+  box-shadow: none, 0 0 2px rgba(0,0,0,0.5);
 }
 .cc-window.cc-banner {
   background-color: #000 !important;
@@ -11712,13 +11746,13 @@ figure.highlight .section {
   .column-left.is-sticky,
   .column-right.is-sticky,
   .column-right-shadow.is-sticky {
-    top: 0.75rem;
+    top: 3.75rem;
     align-self: flex-start;
   }
 }
 @media screen and (max-width: 768px) {
   .section {
-    padding: 1.5rem 1rem;
+    padding: 3.5rem 1rem;
   }
 }
 body {
