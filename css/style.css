@@ -10325,7 +10325,7 @@ table thead {
   min-width: 0;
 }
 body {
-  background: url("https://gitee.com/Tanglk-Seto/photo-gallery/raw/master/img/20210509183542_64267.jpg") no-repeat;
+  background: url("https://gitee.com/Seto098/photo-gallery/raw/master/img/20210509183542_64267.jpg") no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
@@ -11749,8 +11749,14 @@ figure.highlight .section {
     align-self: flex-start;
   }
 }
+.searchbox {
+  margin-top: 6.25rem;
+}
 @media screen and (max-width: 768px) {
   .section {
     padding: 3.5rem 1rem;
   }
+}
+.searchbox .searchbox-container {
+  top: 6.25rem;
 }
